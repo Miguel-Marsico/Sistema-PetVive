@@ -117,3 +117,5 @@ In this project, we have two main DAOs:
 ## Frontend:
 
 #### With the **Backend running**, just open "**home-page.html**" on a **local server** and everything should work perfectly.
+
+Developed by **Miguel Marsico** 👋🏻
