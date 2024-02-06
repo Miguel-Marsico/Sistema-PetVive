@@ -109,8 +109,8 @@ In this project, we have two main DAOs:
 
 #### The database will be **automatically** configured by **Psycopg2**, just create it and add the necessary informations in the code:
 
-    183: dao = AnimalDAOImplPostgresql('database-name', 'user', 'password', 'host')
-    184: usuario_dao = UsuarioDAOImplPostgresql('database-name', 'user', 'password', 'host')
+    line 183: dao = AnimalDAOImplPostgresql('database-name', 'user', 'password', 'host')
+    line 184: usuario_dao = UsuarioDAOImplPostgresql('database-name', 'user', 'password', 'host')
 
 #### After that, just run the **API** and the **backend** should be working
 
