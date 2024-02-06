@@ -10,7 +10,6 @@ https://github.com/Miguel-Marsico/SistemaPetVive/assets/158609724/cff43244-9fa9-
  • <a href="#-tools">Tools</a> </br>
  • <a href="#-database structure">Database structure</a> </br>
  • <a href="#-how to execute the project">How to execute the project</a> </br>
- • <a href="#-autor">Autor</a> </br>
  • <a href="#license">License</a></br>
 </div>
 
