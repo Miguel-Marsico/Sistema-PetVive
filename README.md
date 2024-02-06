@@ -1,5 +1,5 @@
 <h1>
-    PetVive System
+    PetVive System 🐾
 </h1>
 
 https://github.com/Miguel-Marsico/SistemaPetVive/assets/158609724/cff43244-9fa9-445c-b671-1cb2bc768cb2
@@ -8,8 +8,8 @@ https://github.com/Miguel-Marsico/SistemaPetVive/assets/158609724/cff43244-9fa9-
 <div>
  • <a href="#-about">About</a> </br>
  • <a href="#-tools">Tools</a> </br>
- • <a href="#-database-structure">Database structure</a> </br>
- • <a href="#-how-to-execute-the-project">How to execute the project</a> </br>
+ • <a href="#-database structure">Database structure</a> </br>
+ • <a href="#-how to execute the project">How to execute the project</a> </br>
  • <a href="#-autor">Autor</a> </br>
  • <a href="#license">License</a></br>
 </div>
@@ -20,18 +20,18 @@ https://github.com/Miguel-Marsico/SistemaPetVive/assets/158609724/cff43244-9fa9-
 
 ## 🔧 Tools
 
-### **Website** ( HTML + CSS + JavaScript )
+### 💻 **Website** ( HTML + CSS + JavaScript )
 
 - [Google Fonts](https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&display=swap)
 - [Font Awesome](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.cs)
 
-### **API** ([Pyhton](https://www.python.org))
+### 🔄 **API** ([Pyhton](https://www.python.org))
 
 - [Flask](https://flask.palletsprojects.com/en/3.0.x/)
 - [Psycopg2](https://www.psycopg.org/docs/)
 - [HashLib](https://docs.python.org/3/library/hashlib.html)
 
-### **Utilities** ([PostgreSQL](https://www.postgresql.org/docs/))
+### 🛠️ **Utilities** ([PostgreSQL](https://www.postgresql.org/docs/))
 
 - Banco de dados: **[PostgreSQL](https://www.postgresql.org/docs/)**
 - Editor: **[Pycharm Community](https://www.jetbrains.com/pt-br/pycharm/)** +**[Visual Studio Code](https://code.visualstudio.com/)** → Extensions: **[Live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)** 
@@ -50,72 +50,82 @@ In this project, we have two main DAOs:
 
 ### The project utilizes a PostgreSQL database with the following structure:
 
-**1** - Table "**animals**":
+**1** - 🐾 Table "**animals**":
 
 #### Fields: id, nome, idade, raca, tipo, observacoes, ativo.
+```bash
+Stores information about animals, including name, age, breed, type, observations, and active status.
+```
 
-    Stores information about animals, including name, age, breed, type, observations, and active status.
-**2** - Table "**usuarios**":
+**2** - 👤 Table "**usuarios**":
 
 #### Fields: id, username, senha.
 
-    Stores information about users, including username and password (stored as a password hash).
+```bash
+Stores information about users, including username and password (stored as a password hash).
+```
 
 # ▶ How to execute the project
 
 ### The project is divided into **2** parts:
 
- - **Frontend** (WebSite HTML, CSS, JavaScript)
- - **Backend** (Python API, PostgreSQL DataBase)
+ - 🌐 **Frontend** (WebSite HTML, CSS, JavaScript)
+ - ⚙️ **Backend** (Python API, PostgreSQL DataBase)
  
  💡 The backend must be running for the frontend to work.
 
-## Backend:
+## ⚙️ Backend:
 
 ### Installing libraries:
 
-#### **Flask**:
-
-    - pip install Flask
-    - pip install flask-jwt-extended
-    - pip install flasgger
-    - pip install flask-cors
-
-#### **Psycopg2**:
- 
-    - pip install psycopg2
-
-#### **Hashlib**:
-
-    - pip install hashlib
+```bash
+ $ pip install Flask
+ $ pip install flask_jwt_extended
+ $ pip install flasgger
+ $ pip install flask_cors
+```
+```bash
+ $ pip install psycopg2
+``` 
+```bash
+ $ pip install hashlib
+```
 
 ### Library import:
 
-    from flask import Flask, request, jsonify
+```bash
+ from flask import Flask, request, jsonify
 
-    from flask_jwt_extended import JWTManager, jwt_required, create_access_token, get_jwt_identity
+ from flask_jwt_extended import JWTManager, jwt_required, create_access_token, get_jwt_identity
 
-    from flasgger import Swagger
+ from flasgger import Swagger
 
-    import psycopg2
+ import psycopg2
 
-    from abc import ABC, abstractmethod
+ from abc import ABC, abstractmethod
 
-    from flask_cors import CORS
+ from flask_cors import CORS
 
-    import hashlib
+ import hashlib
+```
 
 ### DataBase:
 
 #### The database will be **automatically** configured by **Psycopg2**, just create it and add the necessary informations in the code:
 
-    line 183: dao = AnimalDAOImplPostgresql('database-name', 'user', 'password', 'host')
-    line 184: usuario_dao = UsuarioDAOImplPostgresql('database-name', 'user', 'password', 'host')
+```bash
+ 183: dao = AnimalDAOImplPostgresql('database-name', 'user', 'password', 'host')
+ 184: usuario_dao = UsuarioDAOImplPostgresql('database-name', 'user', 'password', 'host')
+```
 
 #### After that, just run the **API** and the **backend** should be working
 
-## Frontend:
+## 🌐 Frontend:
 
 #### With the **Backend running**, just open "**home-page.html**" on a **local server** and everything should work perfectly.
+
+## 📜 License
+
+### This project is under the MIT license. 
 
 Developed by **Miguel Marsico** 👋🏻
