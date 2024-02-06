@@ -50,7 +50,7 @@ In this project, we have two main DAOs:
 
 ### The project utilizes a PostgreSQL database with the following structure:
 
-**1** - 🐾 Table "**animals**":
+**1** - 🐾 Table "**animais**":
 
 #### Fields: id, nome, idade, raca, tipo, observacoes, ativo.
 ```bash
