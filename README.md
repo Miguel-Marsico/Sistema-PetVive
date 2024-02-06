@@ -127,5 +127,5 @@ Stores information about users, including username and password (stored as a pas
 ## 📜 License
 
 ### This project is under the MIT license. 
-
+<br><br>
 Developed by **Miguel Marsico** 👋🏻
