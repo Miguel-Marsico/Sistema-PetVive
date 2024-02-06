@@ -124,8 +124,8 @@ Stores information about users, including username and password (stored as a pas
 
 #### With the **Backend running**, just open "**home-page.html**" on a **local server** and everything should work perfectly.
 
-## 📜 License
+# 📜 License
 
-### This project is under the MIT license. 
+## This project is under the MIT license. 
 <br><br>
 Developed by **Miguel Marsico** 👋🏻
