@@ -32,8 +32,8 @@ https://github.com/Miguel-Marsico/SistemaPetVive/assets/158609724/cff43244-9fa9-
 
 ### 🛠️ **Utilities** ([PostgreSQL](https://www.postgresql.org/docs/))
 
-- Banco de dados: **[PostgreSQL](https://www.postgresql.org/docs/)**
-- Editor: **[Pycharm Community](https://www.jetbrains.com/pt-br/pycharm/)** +**[Visual Studio Code](https://code.visualstudio.com/)** → Extensions: **[Live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)** 
+- Database: **[PostgreSQL](https://www.postgresql.org/docs/)**
+- Compilers: **[Pycharm Community](https://www.jetbrains.com/pt-br/pycharm/)** +**[Visual Studio Code](https://code.visualstudio.com/)** → Extensions: **[Live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)** 
 
 ## 📂 Database structure
 
