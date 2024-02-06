@@ -65,7 +65,7 @@ Stores information about animals, including name, age, breed, type, observations
 Stores information about users, including username and password (stored as a password hash).
 ```
 
-# ▶ How to execute the project
+## ▶ How to execute the project
 
 ### The project is divided into **2** parts:
 
@@ -74,9 +74,9 @@ Stores information about users, including username and password (stored as a pas
  
  💡 The backend must be running for the frontend to work.
 
-## ⚙️ Backend:
+### ⚙️ Backend:
 
-### Installing libraries:
+#### Installing libraries:
 
 ```bash
  $ pip install Flask
@@ -91,7 +91,7 @@ Stores information about users, including username and password (stored as a pas
  $ pip install hashlib
 ```
 
-### Library import:
+#### Library import:
 
 ```bash
  from flask import Flask, request, jsonify
@@ -109,7 +109,7 @@ Stores information about users, including username and password (stored as a pas
  import hashlib
 ```
 
-### DataBase:
+#### DataBase:
 
 #### The database will be **automatically** configured by **Psycopg2**, just create it and add the necessary informations in the code:
 
@@ -120,12 +120,12 @@ Stores information about users, including username and password (stored as a pas
 
 #### After that, just run the **API** and the **backend** should be working
 
-## 🌐 Frontend:
+### 🌐 Frontend:
 
 #### With the **Backend running**, just open "**home-page.html**" on a **local server** and everything should work perfectly.
 
-# 📜 License
+## 📜 License
 
-## This project is under the MIT license. 
-<br><br>
-Developed by **Miguel Marsico** 👋🏻
+### This project is under the MIT license. 
+<br>
+Developed by Miguel Marsico 👋🏻
