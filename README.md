@@ -72,8 +72,26 @@ Stores information about users, including username and password (stored as a pas
  - ⚙️ **Backend** (Python API, PostgreSQL DataBase)
  
  💡 The backend must be running for the frontend to work.
+ 
+ 💡 Using a Python virtual environment (venv) is essential to isolate and manage project dependencies in a secure and reproducible manner.
 
 ### ⚙️ Backend:
+
+#### Create a venv:
+
+1 - Navigate to the directory where you want to create the virtual environment:
+```bash
+ cd /path/to/your/project
+```
+2 - Create virtual environment:
+```bash
+ python3 -m venv name
+```
+3 - activate the virtual environment:
+```bash
+ name\Scripts\activate
+```
+
 
 #### Installing libraries:
 
