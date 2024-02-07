@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/signup.css">
+    <title>Sistema PETVIVE</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo-box">
+                <h1> </h1>
+            </div>
+            <ul>
+                <li><a href="home-page.html">Sistema PETVIVE</a></li>
+                <button><a href="login-page.html">Fazer Login</a></button>
+            </ul>
+            <div class="menu-icon">
+                <img src="img/menu.png" alt="Ícone abrir menu">
+            </div>
+        </nav>
+        <main>
+            <main>
+                <div class="login-box">
+                    <img src="img/avatar.png">
+                    <h1 class="signup-title">Registro</h1>
+                    <form id="registerForm">
+                        <input type="text" name="username" placeholder="Usuário" required>
+                        <input type="password" name="senha" placeholder="Senha" required>
+                        <button type="submit">Registrar</button>
+                    </form>
+                    <br><br>
+                    <label id="registroMensagem" style="font-family: 'Gabarito', sans-serif; font-size: 25px; display: none;"></label>
+                </div>
+            </main>
+        </main>
+    </div>
+
+    <script src="script/signup.js"></script>
+</body>
+</html>

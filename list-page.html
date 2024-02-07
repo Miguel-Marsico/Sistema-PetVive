@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/list.css">
+    <title>Sistema PETVIVE</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo-box">
+                <h1>Sistema PETVIVE</h1>
+            </div>
+            <ul>
+                <li><a href="add-page.html"> Adicionar paciente </a></li>
+                <li><a href="update-page.html"> Atualizar paciente </a></li>
+                <button><a href="home-page.html">Sair</a></button>
+            </ul>
+            <div class="menu-icon">
+                <img src="img/menu.png" alt="Ícone abrir menu">
+            </div>
+        </nav>
+        <main>                
+            <div class="animal-list">
+                <h2>Lista de Animais:</h2>
+                <ul id="animal-names-list"></ul>
+                <button><a href="list-page.html">Voltar à lista</a></button>
+            </div>
+
+            <div class="animal-details" style="display: none;" id="animal-details">
+                <button id="back-to-list">Voltar à lista</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="script/list.js"></script>
+</body>
+</html>

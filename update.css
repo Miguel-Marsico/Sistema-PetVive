@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gabarito', sans-serif;
+}
+
+body {
+    background-color: #e3f0ff;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1300px;
+    max-height: 0 auto;
+    padding-block-start: 0 4%;
+    margin-left: 80px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+nav .menu-icon {
+    cursor: pointer;
+    display: none;
+}
+
+nav .logo-box {
+    font-size: 25px;
+    font-weight: bold;
+    color: #606060;
+    text-decoration: none;
+}
+
+nav ul {
+    padding-left: 500px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li {
+    padding: 0 15px;
+}
+
+nav ul li a {
+    letter-spacing: 0.5px;
+    border-radius: 5px;
+    padding: 3px;
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #606060;
+}
+
+nav ul button {
+    text-decoration: none;
+    border: none;
+    background-color: #606060;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+nav ul button a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+main {
+    margin-top: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        margin-left: 0;
+        padding: 0 2%;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #e3f0ff;
+        border-top: 1px solid #ccc;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        padding: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    nav ul button {
+        margin: 10px 0 0;
+        width: 200px;
+    }
+
+    nav .menu-icon {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 30px;
+    }
+
+    nav ul {
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+
+    nav ul.active {
+        transform: translateX(0);
+    }
+
+    main {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Estilos adicionales para el contenido principal */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Estilos para el formulario de actualización */
+.update-form {
+    font-size: 20px;
+    color: #606060;
+}
+
+.update-button {
+    background-color: #606060;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.7s;
+}
+
+.update-button:hover {
+    background-color: #A8A8A8;
+}
+
+.update-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.update-form input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: calc(100% - 22px);
+}
+
+.delete-form {
+    font-size: 20px;
+    color: #606060;
+}
+
+.delete-button {
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.7s;
+}
+
+.delete-button:hover {
+    background-color: darkred;
+}
+
+.delete-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.delete-form input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: calc(100% - 22px);
+}

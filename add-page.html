@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/add.css">
+    <title>Sistema PETVIVE</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo-box">
+                <h1>Sistema PETVIVE</h1>
+            </div>
+            <ul>
+                <li><a href="list-page.html"> Lista de pacientes </a></li>
+                <li><a href="update-page.html"> Atualizar paciente </a></li>
+                <button><a href="home-page.html">Sair</a></button>
+            </ul>
+            <div class="menu-icon">
+                <img src="img/menu.png" alt="Ícone abrir menu">
+            </div>
+        </nav>
+        <main>                
+            <div class="main-content">
+                <div style="border: 2px solid #606060; padding: 20px; border-radius: 5px;">
+                    <form id="animalForm" class="add-form">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required><br><br>
+            
+                        <label for="idade">Idade:</label>
+                        <input type="number" id="idade" name="idade" required><br><br>
+            
+                        <label for="raca">Raça:</label>
+                        <input type="text" id="raca" name="raca" required><br><br>
+            
+                        <label for="tipo">Tipo:</label>
+                        <input type="text" id="tipo" name="tipo" required><br><br>
+            
+                        <label for="observacoes">Observações:</label>
+                        <input type="text" id="observacoes" name="observacoes" required><br><br>
+            
+                        <button type="submit" class="add-button">Adicionar Animal</button>
+                    </form>
+                    <label id="animalAdicionado" style="display: none; margin-top: 20px;">Animal adicionado com sucesso.</label>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script/add.js"></script>
+</body>
+</html>
