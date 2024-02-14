@@ -30,7 +30,7 @@ https://github.com/Miguel-Marsico/SistemaPetVive/assets/158609724/cff43244-9fa9-
 - [Psycopg2](https://www.psycopg.org/docs/)
 - [HashLib](https://docs.python.org/3/library/hashlib.html)
 
-### 🛠️ **Utilities** ([PostgreSQL](https://www.postgresql.org/docs/))
+### 🛠️ **Utilities** 
 
 - Database: **[PostgreSQL](https://www.postgresql.org/docs/)**
 - Compilers: **[Pycharm Community](https://www.jetbrains.com/pt-br/pycharm/)** +**[Visual Studio Code](https://code.visualstudio.com/)** → Extensions: **[Live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)** 
