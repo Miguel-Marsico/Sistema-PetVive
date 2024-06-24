@@ -1,23 +1,22 @@
 <h1>
-    PetVive System 🐾
+    Sistema PetVive 🐾
 </h1>
 
 https://github.com/Miguel-Marsico/SistemaPetVive/assets/158609724/cff43244-9fa9-445c-b671-1cb2bc768cb2
 
- ## 📋 Topics
+ ## 📋 Tópicos
 <div>
- • <a href="#-about">About</a> </br>
- • <a href="#-tools">Tools</a> </br>
- • <a href="#-database-structure">Database structure</a> </br>
- • <a href="#-how-to-execute-the-project">How to execute the project</a> </br>
- • <a href="#-license">License</a></br>
+ • <a href="#-sobre">Sobre</a> </br>
+ • <a href="#-ferramentas">Ferramentas</a> </br>
+ • <a href="#-como-executar-esse-projeto">Como Executar esse projeto</a> </br>    
+ • <a href="#-licença">Licença</a></br>
 </div>
 
-## 📗 About
+## 📗 Sobre
 
-**PetVive** is a system designed with the purpose of improving Full Stack development skills in a web application. This platform was developed with the aim of providing veterinarians with a powerful tool for managing their patients' information efficiently and effectively.
+**PetVive** é um sistema desenvolvido com o objetivo de aprimorar as habilidades de desenvolvimento Full Stack em uma aplicação web. Esta plataforma foi desenvolvida com o objetivo de fornecer aos veterinários uma poderosa ferramenta para gerir a informação dos seus pacientes de forma eficiente e eficaz.
 
-## 🔧 Tools
+## 🔧 Ferramentas
 
 ### 💻 **Website** ( HTML + CSS + JavaScript )
 
@@ -30,70 +29,69 @@ https://github.com/Miguel-Marsico/SistemaPetVive/assets/158609724/cff43244-9fa9-
 - [Psycopg2](https://www.psycopg.org/docs/)
 - [HashLib](https://docs.python.org/3/library/hashlib.html)
 
-### 🛠️ **Utilities** 
+### 🛠️ **Utilitários** 
 
-- Database: **[PostgreSQL](https://www.postgresql.org/docs/)**
-- Compilers: **[Pycharm Community](https://www.jetbrains.com/pt-br/pycharm/)** +**[Visual Studio Code](https://code.visualstudio.com/)** → Extensions: **[Live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)** 
+- Base de dados: **[PostgreSQL](https://www.postgresql.org/docs/)**
+- Compiladores: **[Pycharm Community](https://www.jetbrains.com/pt-br/pycharm/)** +**[Visual Studio Code](https://code.visualstudio.com/)** → Extensions: **[Live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)** 
 
-## 📂 Database structure
+## 📂 Estrutura do banco de dados
 
-### Functionality of DAO (Data Access Object) in the Project:
+### Funcionalidade do DAO (Data Access Object) no Projeto:
 
-The **DAO** is a crucial component of this project that manages interaction with the **PostgreSQL** database. It separates the database logic from the rest of the application, enabling database operations to be performed **independently**.
+O **DAO** é um componente crucial deste projeto que gerencia a interação com o banco de dados **PostgreSQL**. Ele separa a lógica do banco de dados do restante do aplicativo, permitindo que as operações do banco de dados sejam executadas **de forma independente**.
 
-In this project, we have two main DAOs:
+Neste projeto, temos dois DAOs principais:
 
-**AnimalDAO**: Manages operations related to animals, such as adding, retrieving, updating, and deleting records from the "animals" table in the database.
+**AnimalDAO**: Gerencia operações relacionadas a animais, como adição, recuperação, atualização e exclusão de registros da tabela “animais” do banco de dados.
 
-**UsuarioDAO**: Manages operations related to users, such as adding and authenticating users, using the "usuarios" table in the database.
+**UsuarioDAO**: Gerencia operações relacionadas a usuários, como adição e autenticação de usuários, utilizando a tabela "usuários" do banco de dados.
 
-### The project utilizes a PostgreSQL database with the following structure:
+### O projeto utiliza um banco de dados PostgreSQL com a seguinte estrutura:
 
-**1** - 🐾 Table "**animais**":
+**1** - 🐾 Tabela "**animais**":
 
-#### Fields: id, nome, idade, raca, tipo, observacoes, ativo.
+#### Colunas: id, nome, idade, raça, tipo, observações, ativo.
 ```bash
-Stores information about animals, including name, age, breed, type, observations, and active status.
+Armazena informações sobre animais, incluindo nome, idade, raça, tipo, observações e status ativo.
 ```
 
-**2** - 👤 Table "**usuarios**":
+**2** - 👤 Tabela "**usuarios**":
 
-#### Fields: id, username, senha.
+#### Colunas: id, nome de usuário, senha.
 
 ```bash
-Stores information about users, including username and password (stored as a password hash).
+Armazena informações sobre usuários, incluindo nome de usuário e senha (armazenados como um hash de senha).
 ```
 
-## ▶ How to execute the project
+## ▶ Como executar o projeto
 
-### The project is divided into **2** parts:
+### O projeto está dividido em **2** partes:
 
  - 🌐 **Frontend** (WebSite HTML, CSS, JavaScript)
  - ⚙️ **Backend** (Python API, PostgreSQL DataBase)
  
- 💡 The backend must be running for the frontend to work.
+ 💡 O back-end deve estar em execução para que o front-end funcione.
  
- 💡 Using a Python virtual environment (venv) is essential to isolate and manage project dependencies in a secure and reproducible manner.
+ 💡 Usar um ambiente virtual Python (venv) é essencial para isolar e gerenciar dependências do projeto de maneira segura e reproduzível.
 
 ### ⚙️ Backend:
 
-#### Create a venv:
+#### Crie um ambiente virtual:
 
-1 - Navigate to the directory where you want to create the virtual environment:
+1 - Navegue até o diretório onde deseja criar o ambiente virtual:
 ```bash
  cd /path/to/your/project
 ```
-2 - Create virtual environment:
+2 - Crie um ambiente virtual:
 ```bash
  python3 -m venv name
 ```
-3 - activate the virtual environment:
+3 - Ative o ambiente virtual:
 ```bash
  name\Scripts\activate
 ```
 
-
-#### Installing libraries:
+#### Instalações de bibliotecas:
 
 ```bash
  $ pip install Flask
@@ -108,7 +106,7 @@ Stores information about users, including username and password (stored as a pas
  $ pip install hashlib
 ```
 
-#### Library import:
+#### Importação de bibliotecas:
 
 ```bash
  from flask import Flask, request, jsonify
@@ -126,23 +124,23 @@ Stores information about users, including username and password (stored as a pas
  import hashlib
 ```
 
-#### DataBase:
+#### Banco de Dados:
 
-#### The database will be **automatically** configured by **Psycopg2**, just create it and add the necessary informations in the code:
+#### O banco de dados será configurado **automaticamente** pelo **Psycopg2**, basta criá-lo e adicionar as informações necessárias no código:
 
 ```bash
  183: dao = AnimalDAOImplPostgresql('database-name', 'user', 'password', 'host')
  184: usuario_dao = UsuarioDAOImplPostgresql('database-name', 'user', 'password', 'host')
 ```
 
-#### After that, just run the **API** and the **backend** should be working
+#### Depois disso, basta executar a **API** e o **backend** deverá estar funcionando
 
 ### 🌐 Frontend:
 
-#### With the **Backend running**, just open "**home-page.html**" on a **local server** and everything should work perfectly.
+#### Com o **Backend em execução**, basta abrir "**home-page.html**" em um **servidor local** e tudo deverá funcionar perfeitamente.
 
-## 📜 License
+## 📜 Licença
 
-### This project is under the MIT license. 
+Com o **Backend em execução**, basta abrir "**home-page.html**" em um **servidor local** e tudo deverá funcionar perfeitamente.
 <br>
-Developed by Miguel Marsico 👋🏻
+Desenvolvido por Miguel Marsico 👋🏻
